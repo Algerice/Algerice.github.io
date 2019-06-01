@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://algerice.github.io/</id>
     <title>Flowers for Algernon</title>
-    <updated>2019-06-01T05:47:02.998Z</updated>
+    <updated>2019-06-01T06:00:17.871Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://algerice.github.io/"/>
     <link rel="self" href="https://algerice.github.io//atom.xml"/>
@@ -10,33 +10,4 @@
     <logo>https://algerice.github.io//images/avatar.png</logo>
     <icon>https://algerice.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Flowers for Algernon</rights>
-    <entry>
-        <title type="html"><![CDATA[后摇分享]]></title>
-        <id>https://algerice.github.io//post/music</id>
-        <link href="https://algerice.github.io//post/music">
-        </link>
-        <updated>2019-05-29T04:41:09.000Z</updated>
-        <content type="html"><![CDATA[<p>分享一些自己喜欢的后摇<br>
-后续会有ost，例如：
-<img src="https://algerice.github.io//post-images/1559104939469.jpg" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[摄影照片]]></title>
-        <id>https://algerice.github.io//post/photo</id>
-        <link href="https://algerice.github.io//post/photo">
-        </link>
-        <updated>2019-05-29T03:01:55.000Z</updated>
-        <content type="html"><![CDATA[<p>这两天把以前的照片转过来</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[书单推荐]]></title>
-        <id>https://algerice.github.io//post/read</id>
-        <link href="https://algerice.github.io//post/read">
-        </link>
-        <updated>2019-05-29T02:58:40.000Z</updated>
-        <content type="html"><![CDATA[<p>把我zdm上发的文章转过来</p>
-]]></content>
-    </entry>
 </feed>
