@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>关于 | Flowers for Algernon</title>
 <meta name="description" content="随想  随笔">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://algerice.github.io//favicon.ico?v=1559459423958">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://algerice.github.io//favicon.ico?v=1559459725149">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://algerice.github.io//styles/main.css">
 
@@ -21,179 +23,121 @@
 
   
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://algerice.github.io/">Flowers for Algernon</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                回顾
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://algerice.github.io/">
+        <img class="avatar" src="https://algerice.github.io//images/avatar.png?v=1559459725149" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://algerice.github.io/">
+        <h1 class="site-title">Flowers for Algernon</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
     </div>
   </div>
-</nav>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>关于</h1>
-            <p class="article-meta">
-              2019-06-01
-              
-            </p>
-            
-            <div class="post-content">
-              <p>机械 大三在读</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
         
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            回顾
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
+
+      <div class="content-container">
+        <div class="post-detail">
           
+          <h2 class="post-title">关于</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-06-01</span>
+            
+          </div>
+          <div class="post-content">
+            <p>机械 大三在读</p>
+
+          </div>
+        </div>
+
         
       </div>
 
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://algerice.github.io//images/avatar.png?v=1559459423958" class="no-responsive avatar">
-    <div class="text-muted">随想  随笔</div>
-    <div class="social-container">
       
         
-      
+          <div id="gitalk-container"></div>
+        
+
         
       
-        
+
+      <div class="site-footer">
+  <div class="slogan">随想  随笔</div>
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-    </div>
+    
+      
+    
+      
+    
   </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      新鲜
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://algerice.github.io//post/ce-shi">测试</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      印象
-    </div>
-    <div class="row">
-      
-        <a href="https://algerice.github.io//tag/KmV6IzWkP" class="badge warning">
-          风光摄影
-        </a>
-      
-        <a href="https://algerice.github.io//tag/R12R9Hl8v" class="badge secondary">
-          硬件分享
-        </a>
-      
-        <a href="https://algerice.github.io//tag/5UcbEAPEL" class="badge success">
-          Original Sound Track
-        </a>
-      
-        <a href="https://algerice.github.io//tag/aMrMYiWJ-" class="badge ">
-          后摇
-        </a>
-      
-        <a href="https://algerice.github.io//tag/rihQF7VXw" class="badge secondary">
-          书单推荐
-        </a>
-      
-        <a href="https://algerice.github.io//tag/1NNJWhiyk" class="badge secondary">
-          数码评测
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by Gridea</a> | <a class="rss" href="https://algerice.github.io//atom.xml" target="_blank">RSS</a>
-  </div>
+  Powered by Gridea</a> | <a class="rss" href="https://algerice.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
 
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
