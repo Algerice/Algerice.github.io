@@ -58,7 +58,7 @@
 .widget li,
 .menu-footer-items a,
 .menu-secondary-items a {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.08em;
   font-weight: 700;
 }
@@ -373,7 +373,7 @@ a img {
   top: -4.5em;
   z-index: 19;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.08em;
 }
 .skip-content:active,
@@ -1651,7 +1651,7 @@ li.pingback:first-child {
 }
 .archive-header {
   padding: 1.5em 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #8c8c8c;
 }
 .archive-header span {
@@ -2880,7 +2880,7 @@ li.pingback:first-child {
   color: #f27c7c;
   display: inline-block;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 12px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
