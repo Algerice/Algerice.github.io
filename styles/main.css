@@ -58,7 +58,7 @@
 .widget li,
 .menu-footer-items a,
 .menu-secondary-items a {
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
 }
