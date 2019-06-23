@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://algerice.github.io/</id>
     <title>Flowers for Algernon</title>
-    <updated>2019-06-20T14:35:03.597Z</updated>
+    <updated>2019-06-23T06:08:38.069Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://algerice.github.io/"/>
     <link rel="self" href="https://algerice.github.io//atom.xml"/>
-    <subtitle>随想  随笔</subtitle>
+    <subtitle>求上居中 求中居下 逆水行舟 不进则退</subtitle>
     <logo>https://algerice.github.io//images/avatar.png</logo>
     <icon>https://algerice.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Flowers for Algernon</rights>
